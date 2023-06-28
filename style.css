@@ -1,0 +1,55 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.category-card {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.category-card img {
+  width: 100%;
+  height: auto;
+}
+
+.category-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.category-overlay h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.category-card:hover .category-overlay {
+  opacity: 1;
+}
+
+.hero {
+  padding-top: 100px; /* Sesuaikan jarak yang diinginkan */
+}
+
+#kategori {
+  margin-top: 100px; /* Sesuaikan jarak yang diinginkan */
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
